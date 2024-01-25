@@ -1,0 +1,871 @@
+State 0:
+          top ::= * END
+          top ::= * seq END
+          seq ::= * pipe
+          seq ::= * pipe SEMI
+          seq ::= * pipe AMP
+          seq ::= * pipe SEMI seq
+          seq ::= * pipe AMP seq
+          pipe ::= * redir
+          pipe ::= * pipe1
+          pipe1 ::= * redir PIPE redir
+          pipe1 ::= * pipe1 PIPE redir
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           END shift  37
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                           top accept
+                           seq shift  36
+                          pipe shift  22
+                         redir shift  34
+                         pipe1 shift  28
+                         group shift  55
+                        simple shift  19
+
+State 1:
+          seq ::= * pipe
+          seq ::= * pipe SEMI
+          seq ::= * pipe AMP
+      (4) seq ::= pipe AMP *
+          seq ::= * pipe SEMI seq
+          seq ::= * pipe AMP seq
+          seq ::= pipe AMP * seq
+          pipe ::= * redir
+          pipe ::= * pipe1
+          pipe1 ::= * redir PIPE redir
+          pipe1 ::= * pipe1 PIPE redir
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                           seq shift  38
+                          pipe shift  22
+                         redir shift  34
+                         pipe1 shift  28
+                         group shift  55
+                        simple shift  19
+                     {default} reduce 4
+
+State 2:
+          seq ::= * pipe
+          seq ::= * pipe SEMI
+          seq ::= * pipe AMP
+          seq ::= * pipe SEMI seq
+          seq ::= * pipe AMP seq
+          pipe ::= * redir
+          pipe ::= * pipe1
+          pipe1 ::= * redir PIPE redir
+          pipe1 ::= * pipe1 PIPE redir
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          group ::= PL * seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                           seq shift  27
+                          pipe shift  22
+                         redir shift  34
+                         pipe1 shift  28
+                         group shift  55
+                        simple shift  19
+
+State 3:
+          seq ::= * pipe
+          seq ::= * pipe SEMI
+          seq ::= * pipe AMP
+          seq ::= * pipe SEMI seq
+          seq ::= * pipe AMP seq
+          pipe ::= * redir
+          pipe ::= * pipe1
+          pipe1 ::= * redir PIPE redir
+          pipe1 ::= * pipe1 PIPE redir
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= BRL * seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                           seq shift  26
+                          pipe shift  22
+                         redir shift  34
+                         pipe1 shift  28
+                         group shift  55
+                        simple shift  19
+
+State 4:
+          seq ::= * pipe
+          seq ::= * pipe SEMI
+      (3) seq ::= pipe SEMI *
+          seq ::= * pipe AMP
+          seq ::= * pipe SEMI seq
+          seq ::= pipe SEMI * seq
+          seq ::= * pipe AMP seq
+          pipe ::= * redir
+          pipe ::= * pipe1
+          pipe1 ::= * redir PIPE redir
+          pipe1 ::= * pipe1 PIPE redir
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                           seq shift  57
+                          pipe shift  22
+                         redir shift  34
+                         pipe1 shift  28
+                         group shift  55
+                        simple shift  19
+                     {default} reduce 3
+
+State 5:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= GT GT WORD * redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  39
+                         group shift  55
+                        simple shift  19
+
+State 6:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= GT WORD * redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  40
+                         group shift  55
+                        simple shift  19
+
+State 7:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= AMP GT WORD * redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  41
+                         group shift  55
+                        simple shift  19
+
+State 8:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          redir ::= NUMBER LT WORD * redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  42
+                         group shift  55
+                        simple shift  19
+
+State 9:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= NUMBER GT GT WORD * redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  43
+                         group shift  55
+                        simple shift  19
+
+State 10:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= NUMBER GT WORD * redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  44
+                         group shift  55
+                        simple shift  19
+
+State 11:
+          pipe1 ::= pipe1 PIPE * redir
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  48
+                         group shift  55
+                        simple shift  19
+
+State 12:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= NUMBER GT AMP NUMBER * redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  51
+                         group shift  55
+                        simple shift  19
+
+State 13:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= AMP GT AMP NUMBER * redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  52
+                         group shift  55
+                        simple shift  19
+
+State 14:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= LT WORD * redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  53
+                         group shift  55
+                        simple shift  19
+
+State 15:
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= GT AMP NUMBER * redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  54
+                         group shift  55
+                        simple shift  19
+
+State 16:
+          pipe1 ::= redir PIPE * redir
+          redir ::= * group
+          redir ::= * GT AMP NUMBER redir
+          redir ::= * GT WORD redir
+          redir ::= * GT GT WORD redir
+          redir ::= * LT WORD redir
+          redir ::= * AMP GT AMP NUMBER redir
+          redir ::= * AMP GT WORD redir
+          redir ::= * NUMBER GT AMP NUMBER redir
+          redir ::= * NUMBER GT WORD redir
+          redir ::= * NUMBER GT GT WORD redir
+          redir ::= * NUMBER LT WORD redir
+          group ::= * simple
+          group ::= * BRL seq BRR
+          group ::= * PL seq PR
+          simple ::= * WORD
+          simple ::= * NUMBER
+          simple ::= * simple WORD
+          simple ::= * simple NUMBER
+
+                           AMP shift  31
+                            GT shift  18
+                        NUMBER shift  20
+                          WORD shift  46
+                            LT shift  32
+                           BRL shift  3
+                            PL shift  2
+                         redir shift  56
+                         group shift  55
+                        simple shift  19
+
+State 17:
+          redir ::= NUMBER GT * AMP NUMBER redir
+          redir ::= NUMBER GT * WORD redir
+          redir ::= NUMBER GT * GT WORD redir
+
+                           AMP shift  29
+                            GT shift  25
+                          WORD shift  10
+
+State 18:
+          redir ::= GT * AMP NUMBER redir
+          redir ::= GT * WORD redir
+          redir ::= GT * GT WORD redir
+
+                           AMP shift  33
+                            GT shift  23
+                          WORD shift  6
+
+State 19:
+     (22) group ::= simple *
+          simple ::= simple * WORD
+          simple ::= simple * NUMBER
+
+                        NUMBER shift  49
+                          WORD shift  50
+                     {default} reduce 22
+
+State 20:
+          redir ::= NUMBER * GT AMP NUMBER redir
+          redir ::= NUMBER * GT WORD redir
+          redir ::= NUMBER * GT GT WORD redir
+          redir ::= NUMBER * LT WORD redir
+     (26) simple ::= NUMBER *
+
+                            GT shift  17
+                            LT shift  24
+                     {default} reduce 26
+
+State 21:
+          redir ::= AMP GT * AMP NUMBER redir
+          redir ::= AMP GT * WORD redir
+
+                           AMP shift  30
+                          WORD shift  7
+
+State 22:
+      (2) seq ::= pipe *
+          seq ::= pipe * SEMI
+          seq ::= pipe * AMP
+          seq ::= pipe * SEMI seq
+          seq ::= pipe * AMP seq
+
+                          SEMI shift  4
+                           AMP shift  1
+                     {default} reduce 2
+
+State 23:
+          redir ::= GT GT * WORD redir
+
+                          WORD shift  5
+
+State 24:
+          redir ::= NUMBER LT * WORD redir
+
+                          WORD shift  8
+
+State 25:
+          redir ::= NUMBER GT GT * WORD redir
+
+                          WORD shift  9
+
+State 26:
+          group ::= BRL seq * BRR
+
+                           BRR shift  45
+
+State 27:
+          group ::= PL seq * PR
+
+                            PR shift  47
+
+State 28:
+      (8) pipe ::= pipe1 *
+          pipe1 ::= pipe1 * PIPE redir
+
+                          PIPE shift  11
+                     {default} reduce 8
+
+State 29:
+          redir ::= NUMBER GT AMP * NUMBER redir
+
+                        NUMBER shift  12
+
+State 30:
+          redir ::= AMP GT AMP * NUMBER redir
+
+                        NUMBER shift  13
+
+State 31:
+          redir ::= AMP * GT AMP NUMBER redir
+          redir ::= AMP * GT WORD redir
+
+                            GT shift  21
+
+State 32:
+          redir ::= LT * WORD redir
+
+                          WORD shift  14
+
+State 33:
+          redir ::= GT AMP * NUMBER redir
+
+                        NUMBER shift  15
+
+State 34:
+      (7) pipe ::= redir *
+          pipe1 ::= redir * PIPE redir
+
+                          PIPE shift  16
+                     {default} reduce 7
+
+State 35:
+      (1) top ::= seq END *
+
+                             $ reduce 1
+
+State 36:
+          top ::= seq * END
+
+                           END shift  35
+
+State 37:
+      (0) top ::= END *
+
+                             $ reduce 0
+
+State 38:
+      (6) seq ::= pipe AMP seq *
+
+                     {default} reduce 6
+
+State 39:
+     (14) redir ::= GT GT WORD redir *
+
+                     {default} reduce 14
+
+State 40:
+     (13) redir ::= GT WORD redir *
+
+                     {default} reduce 13
+
+State 41:
+     (17) redir ::= AMP GT WORD redir *
+
+                     {default} reduce 17
+
+State 42:
+     (21) redir ::= NUMBER LT WORD redir *
+
+                     {default} reduce 21
+
+State 43:
+     (20) redir ::= NUMBER GT GT WORD redir *
+
+                     {default} reduce 20
+
+State 44:
+     (19) redir ::= NUMBER GT WORD redir *
+
+                     {default} reduce 19
+
+State 45:
+     (23) group ::= BRL seq BRR *
+
+                     {default} reduce 23
+
+State 46:
+     (25) simple ::= WORD *
+
+                     {default} reduce 25
+
+State 47:
+     (24) group ::= PL seq PR *
+
+                     {default} reduce 24
+
+State 48:
+     (10) pipe1 ::= pipe1 PIPE redir *
+
+                     {default} reduce 10
+
+State 49:
+     (28) simple ::= simple NUMBER *
+
+                     {default} reduce 28
+
+State 50:
+     (27) simple ::= simple WORD *
+
+                     {default} reduce 27
+
+State 51:
+     (18) redir ::= NUMBER GT AMP NUMBER redir *
+
+                     {default} reduce 18
+
+State 52:
+     (16) redir ::= AMP GT AMP NUMBER redir *
+
+                     {default} reduce 16
+
+State 53:
+     (15) redir ::= LT WORD redir *
+
+                     {default} reduce 15
+
+State 54:
+     (12) redir ::= GT AMP NUMBER redir *
+
+                     {default} reduce 12
+
+State 55:
+     (11) redir ::= group *
+
+                     {default} reduce 11
+
+State 56:
+      (9) pipe1 ::= redir PIPE redir *
+
+                     {default} reduce 9
+
+State 57:
+      (5) seq ::= pipe SEMI seq *
+
+                     {default} reduce 5
+
+----------------------------------------------------
+Symbols:
+    0: $:
+    1: SEMI
+    2: PIPE
+    3: END
+    4: AMP
+    5: GT
+    6: NUMBER
+    7: WORD
+    8: LT
+    9: BRL
+   10: BRR
+   11: PL
+   12: PR
+   13: error:
+   14: commands:
+   15: top: END AMP GT NUMBER WORD LT BRL PL
+   16: seq: AMP GT NUMBER WORD LT BRL PL
+   17: pipe: AMP GT NUMBER WORD LT BRL PL
+   18: redir: AMP GT NUMBER WORD LT BRL PL
+   19: pipe1: AMP GT NUMBER WORD LT BRL PL
+   20: group: NUMBER WORD BRL PL
+   21: simple: NUMBER WORD
