@@ -1,8 +1,12 @@
-# shell
-A custom shell implementation
+# Custom Shell Implementation
 
-Course assignment.
+This project involves the development of a custom shell as part of a course assignment. The custom shell is designed to support sequences, pipes, redirects, environment variables, PATH handling, and other essential features.
 
-Implementing a custom shell, with support for sequences, pipes, redirects, environment variables, PATH handling, etc.
+## Assignment Overview
 
-See README.rst for the assignment specifications.
+The primary goal of this project is to implement a custom shell following the specifications outlined in the assignment document. For detailed information and requirements, please refer to [README.rst](README.rst).
+
+## Features
+
+- Implementation of a custom shell
+- Support for sequences, pipes, redirects, environment variables, PATH handling, etc.
